@@ -1,0 +1,490 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+a{
+    cursor: pointer;
+    text-decoration: none;
+}
+    
+Body{
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    box-sizing: border-box;
+    
+    font-family: 'Helvetica';
+    font-size: 16px;
+    color: #000;
+}
+
+#Contenido{
+    flex: 1;    
+}
+
+.AnchoDeCuadro{
+    width: 90%;
+    max-width: 1024px;
+}
+
+.ir-arriba{
+    background-color: springgreen;
+    display: none;
+    padding: 10px;
+    cursor: pointer;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 100;
+    border-radius: 12px;
+    -webkit-border-radius: 12px;
+    -moz-border-radius: 12px;
+    -ms-border-radius: 12px;
+    -o-border-radius: 12px;
+}
+
+#triangulobotonarriba{
+    height: 0;
+    border-bottom: 30px solid #FFFFFF;
+    border-left: 20px solid transparent;
+    border-right: 20px solid transparent;
+    width: 0;
+    transition: all .5s linear;
+    z-index: 101;
+}
+
+/*======== Encabezado ========*/
+#Encabezado{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.CuadroDeEncabezado{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    
+    padding: 10px 0;
+    -ms-box-shadow: 0px 5px 10px 0px rgba(0,0,0,0.2);
+    -moz-box-shadow: 0px 5px 10px 0px rgba(0,0,0,0.2);
+    box-shadow: 0px 5px 10px 0px rgba(0,0,0,0.2);
+    width: 100%;
+    
+    animation: EntraLogo 3s ease-out;
+    border-radius: 0;
+}
+
+@keyframes EntraLogo{
+    0%{top: -150px;}
+    80%{top: -150px;}
+    100%{top: 0;}
+}
+
+#TamanoImgLogo{
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
+}
+
+#TituloDePagina{
+    font-size: 1.6em;
+}
+
+#TituloDePagina a{
+    color: #000;
+    text-decoration: none;
+}
+
+#TituloDePagina a:hover{
+    color: forestgreen;
+    transition: all 0.2s;
+}
+
+#SubtituloDePagina{
+    font-size: 0.8em;
+    font-style: italic;
+    font-weight: 400;
+}
+/*======== Encabezado ========*/
+
+
+
+/*======== Sección principal ========*/
+#SeccionPrincipal{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+    
+    width: 100%;
+}
+
+.TituloDeSeccionPrincipal{
+    font-size: 1.4em;
+    text-align: center;
+}
+
+.ParrafoDeSeccionPrincipal{
+    margin-top: 20px;
+    
+    font-size: 1.1em;
+    text-align: center;
+}
+
+#RecomendacionDeLaSemana{
+    margin-top: 50px;
+    
+    text-align: center;
+    /*width: 90%;*/
+    /*font-size: 1.1em;*/
+}
+
+.SeccionInstagram{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    width: 100%;
+    
+    margin-top: 10px;
+}
+
+#ImgRecomendacion{
+    width: 200px;
+    height: 200px;
+}
+
+.Estrella{
+    color: yellow;
+}
+
+#EstrellasDeRecomendacion{
+    font-size: 2.2em;
+    line-height: 40px;
+}
+
+#NombreDeRecomendacion{
+    font-size: 1.1em;
+    text-decoration: underline;
+}
+
+#TextoDeRecomendacion{
+    max-width: 360px;
+    margin-bottom: 10px;
+    color: orangered;
+}
+
+#TituloDeArticulos{
+    margin-top: 10px;
+}
+
+#CuadroDeArticulos{
+    max-width: 980px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+    margin-bottom: 40px;
+}
+
+#CuadroDeRecetas{
+    max-width: 750px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+    margin-bottom: 40px;
+}
+
+.VinculoDelArticulo{
+    color: #000;
+}
+
+.Articulo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+    margin: 20px 0;
+    
+    text-align: center;
+}
+
+.ImgDeArticulo{
+    width: 200px;
+    height: 200px;
+    
+    background-image: url(../Img/Fondo.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    
+    cursor: pointer;
+}
+
+.TextoDeArticulo{
+    width: 100%;
+    margin-top: 14px;
+    
+    font-size: 1.1em;
+    text-align: center;
+
+}
+/*======== Sección principal ========*/
+
+
+
+/*======== Sección agenda consulta ========*/
+#SeccionAgendaConsulta{
+    width: 100%;
+    min-height: 580px;
+    height: 100vh;
+    
+    background-image: url(../Img/Fondo.jpg);
+    background-attachment: fixed;
+    background-position: center 0;
+    background-size: cover;
+}
+
+#CuadroDeSeccionAgendaConsulta{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    
+    color: #fff;
+    
+    background-color: rgba(0,0,0,0.7);
+}
+
+.TituloDeSeccionAgendaConsulta{
+    font-size: 2em;
+    text-align: center;
+}
+
+.ParrafoDeSeccionAgendaConsulta{
+    margin-top: 20px;
+    
+    font-size: 1.2em;
+    text-align: center;
+}
+
+/*----- Botón para citas -----*/
+#CuadroDeBoton{
+    position: relative;
+    margin: 40px 0;
+    
+    width: 100%;
+    
+    text-align: center;
+    
+    animation: Salto 1.2s infinite;
+}
+
+@Keyframes Salto{
+    0%{bottom: 0;}
+    50%{bottom: 10px;}
+    100%{bottom: 0;}
+}
+
+.Boton{
+    width: 90%;
+    max-width: 270px;
+    padding: 14px 0;
+    
+    font-size: 1.2em;
+    
+    border: 0;
+    border-radius: 10px;
+    transition: all 0.2s;
+    cursor: pointer;
+}
+
+.Boton:hover{
+    opacity: 0.6;
+}
+
+.BtnAgendarVerde{
+    background-color: forestgreen;
+    
+    color: #fff;
+}
+
+.BtnAgendarNaranja{
+    background-color: darkorange;
+    
+    color: #fff;
+}
+/*----- Botón para citas -----*/
+/*======== Sección agenda consulta ========*/
+
+
+
+/*======== Pie de página ========*/
+#PieDePagina{
+    align-self: flex-end;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    width: 100%;
+    
+    color: #fff;
+    
+    background-color: #111;
+}
+
+#CuadroDePieDePagina{
+    width: 90%;
+    padding: 20px 0;
+    
+    font-size: 1em;
+    font-weight: 400;
+    text-align: center;
+}
+/*======== Pie de página ========*/
+
+
+
+/*=== Mobile first ===*/
+@media only screen and (min-width:480px){ 
+    /*======== Encabezado ========*/
+    .CuadroDeEncabezado{
+        width: 450px;
+
+        border-radius: 0 0 80px 80px;
+    }
+
+    #TamanoImgLogo{
+        width: 75px;
+        height: 75px;
+    }
+
+    #TituloDePagina{
+        font-size: 2em;
+    }
+
+    #SubtituloDePagina{
+        font-size: 1em;
+    }
+    /*======== Encabezado ========*/
+    
+    
+    .TituloDeSeccionPrincipal{
+        font-size: 1.6em;
+    }
+
+    .ParrafoDeSeccionPrincipal{
+        font-size: 1.3em;
+    }
+    
+    #EstrellasDeRecomendacion{
+        font-size: 2.5em;
+        line-height: 50px;
+    }
+    
+    #NombreDeRecomendacion{
+        font-size: 1.5em;
+        text-decoration: underline;
+    }
+    
+    #TextoDeRecomendacion{
+        font-size: 1.14em;
+    }
+    
+    #CuadroDeRecetas{
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+
+        margin-bottom: 50px;
+    }
+
+    .Articulo{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        margin: 20px 0;
+
+        text-align: center;
+    }
+
+    .TextoDeArticulo{
+        margin-top: 12px;
+    }
+    
+    
+    
+    .Boton{
+        padding: 16px 0;
+
+        font-size: 1.3em;
+    }
+}
+
+@media only screen and (min-width:768px){
+    .TituloDeSeccionPrincipal{
+        font-size: 2em;
+    }
+
+    .ParrafoDeSeccionPrincipal{
+        font-size: 1.4em;
+    }
+    
+    #EstrellasDeRecomendacion{
+        font-size: 2.8em;
+        line-height: 58px;
+    }
+    
+    #NombreDeRecomendacion{
+        font-size: 1.7em;
+        text-decoration: underline;
+    }
+    
+    
+    
+    #CuadroDeArticulos{
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        
+        margin-top: 20px;
+        margin-bottom: 50px;
+    }
+    
+    .ImgDeArticulo{
+        opacity: 0.8;
+    }
+
+    .ImgDeArticulo:hover{
+        opacity: 1;
+    }
+    
+    .TextoDeArticulo{
+        width: 75%;
+    }
+    
+    
+    
+    .TituloDeSeccionAgendaConsulta{
+        font-size: 3.2em;
+    }
+
+    .ParrafoDeSeccionAgendaConsulta{
+        font-size: 1.6em;
+    }
+    
+    .Boton{
+        font-size: 1.5em;
+    }
+}

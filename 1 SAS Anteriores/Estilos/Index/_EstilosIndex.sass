@@ -1,0 +1,502 @@
+@import ../_Generales
+@import ../_Mixins
+@import ../_MixinsParaDispositivos
+@import ../_Variables
+
+Body .Index
+    font:
+        family: $FuenteGeneral
+        size: 16px
+
+.Index
+    a
+        text-decoration: none
+
+    #SeccionCompleta
+        height: 100%
+        text-align: center
+        width: 100%
+
+    #TrianguloBlanco
+        height: 0
+        left: 0
+        position: absolute
+        top: 0
+        width: 0
+        border:
+            right: 120px solid transparent
+            top: 120px solid #fff
+            left: 120px solid #fff
+            bottom: 120px solid transparent
+
+    .Contenedor
+        text-align: center
+        width: 1024px
+
+    #TituloLogoEncabezado
+        display: none
+        visibility: hidden
+
+    #SubtituloLogoEncabezado
+        display: none
+        visibility: hidden
+
+    #SeccionCentrada
+        @include CentrarEnPantalla(-50%,-50%)
+        padding:
+            bottom: 0px
+        @include Transition(all,0.45s,linear)
+
+    #Titulo
+        color: #fff
+        font:
+            family: $FuenteGeneral
+            size: 8em
+            weight: 500
+        line-height: 0.5em
+        @include Transition(all,0.45s,linear)
+
+    #Subtitulo
+        color: #fff
+        font:
+            family: $FuenteGeneral
+            size: 1.64em
+            weight: 500
+        line-height: 1em
+
+    #EspacioEntreBoton
+        padding:
+            top: 0px
+        
+    .BotonPortafolio a button
+        padding: 12px 48px
+        border: 2px solid #fff
+        cursor: pointer
+        background: rgba(255,255,255,0.4)
+        overflow: hidden
+        position: relative
+        margin:
+            bottom: -10px
+        &:hover span
+            color: #333
+        &:focus
+            outline: none
+        &:nth-child(1):after
+            content: ""
+            position: absolute
+            width: 200%
+            height: 100%
+            left: -215%
+            top: 0
+            background: #fff
+            @include Transformar(skew(45deg))
+            -webkit-transition: 0.45s
+            -moz-transition: 0.45s
+            -ms-transition: 0.45s
+            -o-transition: 0.45s
+            transition: 0.45s
+        &:nth-child(1):hover:after
+            left: -15%
+        span
+            position: relative
+            z-index: 3
+            font-size: 1.4em
+            color: #fff
+            font-family: 'Poppins', sans-serif
+            font-weight: 400
+            -webkit-transition: 0.3s
+            -moz-transition: 0.3s
+            -ms-transition: 0.3s
+            -o-transition: 0.3s
+            transition: 0.3s        
+
+    .SeparacionBotonesSociales
+        padding:
+            left: 8px
+            right: 8px
+
+    #TamanoImgLogoFacebook
+        height: 50px
+        margin:
+            top: 30px
+        width: 50px
+        @include BordeRedondeado(12px)
+        @include Transition(all,0.2s,linear)
+        &:hover
+            height: 55px
+            width: 55px
+    
+    #TamanoImgSobre
+        height: 50px
+        margin:
+            top: 30px
+        width: 50px
+        @include BordeRedondeado(12px)
+        @include Transition(all,0.2s,linear)
+        &:hover
+            height: 55px
+            width: 55px
+
+    #TamanoImgLogoBehance
+        height: 50px
+        margin:
+            top: 30px
+        width: 50px
+        @include BordeRedondeado(12px)
+        @include Transition(all,0.2s,linear)
+        &:hover
+            height: 55px
+            width: 55px                 
+
+    @include TabletAcostada
+        #SeccionCentrada
+            @include CentrarEnPantalla(-50%,-50%)
+            @include Transition(all, 0.45s, linear)
+            h1
+                position: absolute
+                left: 0%
+            #EspacioEntreBoton
+                display: none
+                visibility: hidden
+            #BotonesDeRedesSociales
+                margin:
+                    left: 330px
+                    top: 30px
+        
+        #TrianguloBlanco
+            display: none
+            visibility: hidden
+
+        #TituloLogoEncabezado
+            display: none
+            visibility: hidden
+
+        #SubtituloLogoEncabezado
+            display: none
+            visibility: hidden
+       
+        .BotonPortafolio a button
+            padding: 12px 48px
+            border: 2px solid #fff
+            cursor: pointer
+            background: rgba(255,255,255,0.4)
+            overflow: hidden
+            position: relative
+            margin:
+                bottom: 0px
+                left: 336px
+                top: 10px
+            span
+                position: relative
+                z-index: 3
+                font:
+                    size: 2em
+                color: #fff
+                font
+                    family: "Poppins", sans-serif
+                    weight: 400
+                -webkit-transition: 0.3s
+                -moz-transition: 0.3s
+                -ms-transition: 0.3s
+                -o-transition: 0.3s
+                transition: 0.3s
+        
+        #Titulo
+            font:
+                size: 4.8em
+            @include Transition(all, 0.45s, linear)
+                
+        #Subtitulo
+            font:
+                size: 1em
+            line-height: 0em
+            @include Transition(all, 0.45s, linear)
+                
+        .SeparacionBotonesSociales, #TamanoImgLogoFacebook, #TamanoImgSobre, #TamanoImgLogoBehance 
+            margin:
+                left: 2px
+                right: 2px
+            
+        #TamanoImgLogoFacebook
+            height: 50px
+            margin:
+                top: 0px
+            width: 50px
+            @include BordeRedondeado(8px)
+            @include Transition(all, 0.2s, linear)
+            &:hover
+                height: 60px
+                width: 60px
+                
+        #TamanoImgSobre
+            height: 50px
+            margin:
+                top: 0px
+            width: 50px
+            @include BordeRedondeado(4px)
+            @include Transition(all, 0.2s, linear)
+            &:hover
+                height: 60px
+                width: 60px
+            
+        #TamanoImgLogoBehance
+            height: 50px
+            margin:
+                top: 0px
+            width: 50px
+            @include BordeRedondeado(4px)
+            @include Transition(all, 0.2s, linear)
+            &:hover
+                height: 60px
+                width: 60px
+    
+    @include Tablet
+        #SeccionCentrada
+            @include CentrarEnPantalla(-50%,-50%)
+            @include Transition(all, 0.45s, linear)
+            #EspacioEntreBoton
+                padding:
+                    top: 0px
+        
+        #TrianguloBlanco
+            display: none
+            visibility: hidden
+
+        #TituloLogoEncabezado
+            display: none
+            visibility: hidden
+
+        #SubtituloLogoEncabezado
+            display: none
+            visibility: hidden
+    
+        #Titulo
+            color: #fff
+            font:
+                family: $FuenteGeneral
+                size: 6em
+                weight: 500
+            line-height: 0.5em
+            @include Transition(all, 0.45s, linear)
+
+        #Subtitulo
+            color: #fff
+            font:
+                family: $FuenteGeneral
+                size: 1.1em
+                weight: 500
+            line-height: 1em
+            @include Transition(all, 0.45s, linear)
+
+        #EspacioEntreBoton
+            padding:
+                top: 0px
+
+        .BotonPortafolio a button span
+            position: relative
+            z-index: 3
+            font:
+                size: 1.5em
+                family: "Poppins", sans-serif
+                weight: 400
+            color: #fff
+            @include Transition(all, 0.3s, linear)
+
+        .SeparacionBotonesSociales, #TamanoImgLogoFacebook, #TamanoImgSobre, #TamanoImgLogoBehance 
+            margin:
+                left: 2px
+                right: 2px
+            
+        #TamanoImgLogoFacebook
+            height: 50px
+            margin:
+                top: 20px
+            width: 50px
+            @include BordeRedondeado(12px)
+            @include Transition(all, 0.2s, linear)
+            &:hover
+                height: 58px
+                width: 58px
+
+        #TamanoImgSobre
+            height: 50px
+            margin:
+                top: 20px
+            width: 50px
+            @include BordeRedondeado(12px)
+            @include Transition(all, 0.2s, linear)
+            &:hover
+                height: 58px
+                width: 58px
+            
+        #TamanoImgLogoBehance
+            height: 50px
+            margin:
+                top: 20px
+            width: 50px
+            @include BordeRedondeado(12px)
+            @include Transition(all, 0.2s, linear)
+            &:hover
+                height: 58px
+                width: 58px
+
+    
+    @include CelularAcostado
+        #SeccionCentrada
+            @include CentrarEnPantalla(-50%,-50%)
+            @include Transition(all, 0.45s, linear)
+            h1
+                position: absolute
+                left: 0%
+            #EspacioEntreBoton
+                display: none
+                visibility: hidden
+            #BotonesDeRedesSociales
+                margin:
+                    left: 330px
+                    top: 30px
+        
+        #TrianguloBlanco
+            display: none
+            visibility: hidden
+
+        #TituloLogoEncabezado
+            display: none
+            visibility: hidden
+
+        #SubtituloLogoEncabezado
+            display: none
+            visibility: hidden
+        
+        .BotonPortafolio a button span
+            position: relative
+            z-index: 3
+            font:
+                size: 1.4em
+                family: "Poppins", sans-serif
+                weight: 400
+            color: #fff
+            @include Transition(all, 0.3s, linear)    
+       
+        #Titulo
+            font:
+                size: 3.4em
+            @include Transition(all, 0.45s, linear)
+
+        #Subtitulo
+            font:
+                size: 0.7em
+            line-height: 0em
+            @include Transition(all, 0.45s, linear)
+
+        #EspacioEntreBoton
+            padding:
+                top: 0px
+        
+        .SeparacionBotonesSociales, #TamanoImgLogoFacebook, #TamanoImgSobre, #TamanoImgLogoBehance 
+            padding:
+                left: 6px
+                right: 6px
+            
+        #TamanoImgLogoFacebook
+            height: 40px
+            margin:
+                top: 0px
+            width: 40px
+            @include BordeRedondeado(6px)
+            @include Transition(all, 0.2s, linear)
+            &:hover
+                height: 50px
+                width: 50px
+
+        #TamanoImgSobre
+            height: 40px
+            margin:
+                top: 0px
+            width: 40px
+            @include BordeRedondeado(4px)
+            @include Transition(all, 0.2s, linear)
+            &:hover
+                height: 50px
+                width: 50px
+            
+        #TamanoImgLogoBehance
+            height: 40px
+            margin:
+                top: 0px
+            width: 40px
+            @include BordeRedondeado(4px)
+            @include Transition(all, 0.2s, linear)
+            &:hover
+                height: 50px
+                width: 50px
+
+        .SeparacionBotonesSociales, #TamanoImgLogoFacebook, #TamanoImgSobre, #TamanoImgLogoBehance 
+            margin:
+                left: 0px
+                right: 0px
+                          
+    @include Celular
+        #SeccionCentrada
+            @include CentrarEnPantalla(-50%,-50%)
+            @include Transition(all, 0.45s, linear)
+                
+        #TrianguloBlanco
+            display: none
+            visibility: hidden
+            
+        #TituloLogoEncabezado
+            display: none
+            visibility: hidden
+
+        #SubtituloLogoEncabezado
+            display: none
+            visibility: hidden
+    
+        #Titulo
+            font:
+                size: 3.8em
+            @include Transition(all,0.45s,linear)
+    
+        #Subtitulo
+            font:
+                size: 3.8em
+            @include Transition(all, 0.45s, linear)
+            
+        .SeparacionBotonesSociales, #TamanoImgLogoFacebook, #TamanoImgSobre, #TamanoImgLogoBehance 
+            margin:
+                left: 0px
+                right: 0px
+
+    @include CelularChico
+        #SeccionCentrada
+            @include CentrarEnPantalla(-50%,-50%)
+            @include Transition(all, 0.45s, linear)
+        
+        #TrianguloBlanco
+            display: none
+            visibility: hidden
+
+        #TituloLogoEncabezado
+            display: none
+            visibility: hidden
+
+        #SubtituloLogoEncabezado
+            display: none
+            visibility: hidden
+            
+        #Titulo
+            font:
+                size: 3.8em
+            @include Transition(all, 0.45s, linear)
+        
+        #Subtitulo
+            font:
+                size: 0.8em
+            line-height: 0em
+            @include Transition(all, 0.45s, linear)
+                
+        .SeparacionBotonesSociales, #TamanoImgLogoFacebook, #TamanoImgSobre, #TamanoImgLogoBehance 
+            margin:
+                left: 0px
+                right: 0px

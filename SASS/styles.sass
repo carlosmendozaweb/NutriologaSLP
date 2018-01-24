@@ -1,0 +1,61 @@
+@import Estilos/Comunes/_Encabezado
+
+@import Estilos/Comunes/_BtnIrArriba
+    
+@import Estilos/Comunes/_Botones
+    
+@import Estilos/Comunes/_PieDePagina
+
+
+/*index.html*/
+@import Estilos/PaginaDeInicio/_RecomendacionSemanal
+
+@import Estilos/PaginaDeInicio/_SeccionArticulos
+    
+@import Estilos/PaginaDeInicio/_SeccionRecetas
+    
+@import Estilos/PaginaDeInicio/_SeccionAgendaConsulta
+
+@import Estilos/PaginaDeInicio/_ParaDispositivos
+/*index.html*/
+
+
+/*Página de etiqueta nutricional*/
+@import Estilos/EtiquetaNutricional/_EtiquetaNutricional
+/*Página de etiqueta nutricional*/
+
+
+//Paleta de colores
+$Negro: #000000
+
+//Tamaño de fuente base
+$TamanoNormal: 16px
+
+
+*
+    margin: 0
+    padding: 0
+
+a
+    cursor: pointer
+    text-decoration: none
+
+Body
+    display: flex
+    flex:
+        direction: column
+    
+    box-sizing: border-box
+    min-height: 100vh
+    
+    color: $Negro
+    font:
+        family: 'Helvetica'
+        size: $TamanoNormal
+
+    #Contenido
+        flex: 1
+
+    .AnchoDeCuadro
+        max-width: 1024px
+        width: 90%

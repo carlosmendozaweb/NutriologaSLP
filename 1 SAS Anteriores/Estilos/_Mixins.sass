@@ -1,0 +1,68 @@
+@mixin BordeRedondeado($radio)
+    -webkit-border-radius: $radio
+    -moz-border-radius: $radio
+    -ms-border-radius: $radio
+    -o-border-radius: $radio
+    border-radius: $radio
+
+@mixin Giro($giro)
+    -webkit-transform: rotate($giro)
+    -moz-transform: rotate($giro)
+    -ms-transform: rotate($giro)
+    -o-transform: rotate($giro)
+    transform: rotate($giro)
+    
+@mixin Display($Display)
+    -webkit-display: ($Display)
+    -moz-display: ($Display)
+    -ms-display: ($Display)
+    -o-display: ($Display)
+    display: ($Display)
+    
+@mixin TranslateY($Medida)
+    -webkit-transform: translateY($Medida)
+    -moz-transform: translateY($Medida)
+    -ms-transform: translateY($Medida)
+    -o-transform: translateY($Medida)
+    transform: translateY($Medida)
+ 
+@mixin Transition($Propiedad, $Tiempo, $Efecto)
+    -webkit-transition: ($Propiedad, $Tiempo, $Efecto)
+    -moz-transition: ($Propiedad, $Tiempo, $Efecto)
+    -ms-transition: ($Propiedad, $Tiempo, $Efecto)
+    -o-transition: ($Propiedad, $Tiempo, $Efecto)
+    transition: ($Propiedad, $Tiempo, $Efecto)
+    
+@mixin Animacion($Nombre, $Duracion, $Repeticiones, $Efecto)
+    -webkit-animation-name: $Nombre
+    -webkit-animation-duration: $Duracion
+    -webkit-animation-iteration-count: $Repeticiones
+    -webkit-animation-timing-function: $Efecto
+    -moz-animation-name: $Nombre
+    -moz-animation-duration: $Duracion
+    -moz-animation-iteration-count: $Repeticiones
+    -moz-animation-timing-function: $Efecto
+    -ms-animation-name: $Nombre
+    -ms-animation-duration: $Duracion
+    -ms-animation-iteration-count: $Repeticiones
+    -ms-animation-timing-function: $Efecto
+    -o-animation-name: $Nombre
+    -o-animation-duration: $Duracion
+    -o-animation-iteration-count: $Repeticiones
+    -o-animation-timing-function: $Efecto
+
+@mixin Transformar($Efecto)
+    -webkit-transform: $Efecto
+    -moz-transform: $Efecto
+    -ms-transform: $Efecto
+    -o-transform: $Efecto
+    transform: $Efecto
+    
+@mixin CentrarEnPantalla($X,$Y)
+    position: absolute
+    top: 50%
+    left: 50%
+    transform: TranslateX($X) TranslateY($Y)
+    
+@mixin KeyframesDePulso
+    @content
