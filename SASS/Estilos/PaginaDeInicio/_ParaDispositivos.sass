@@ -16,9 +16,11 @@
     #SubtituloDePagina
         font:
             size: 1em
-
     /*======== Encabezado ========*/
-
+    
+    
+    /*======== Sección principal ========*/
+    /*------ Recomendación ------*/
     .TituloDeSeccionPrincipal
         font:
             size: 1.6em
@@ -41,38 +43,84 @@
         font:
             size: 1.14em
 
-    #CuadroDeRecetas
-        flex:
-            direction: row
-            wrap: wrap
-        justify-content: space-between
-
-        margin:
-            bottom: 50px     
-            
-    .Articulo
-        display: flex
-        flex:
-            direction: column
-        align-items: center
-
-        margin: 20px 0
-
-        text-align: center
-
-    .TextoDeArticulo
-        margin:
-            top: 12px
-
     .Boton
         padding: 16px 0
 
         font:
             size: 1.3em
+    /*------ Recomendación ------*/
+    
+    /*----- Recetas -----*/
+    .Recetas-Rectangulo-Principal
+        flex:
+            direction: row
+            wrap: wrap
+        justify-content: space-around
 
+        max-width: 800px
+        width: 100%
+        
+    .Recetas-Item
+        max-width: 220px
+        margin: 20px 0
+        width: 100%
+
+        text:
+            align: center
+    /*----- Recetas -----*/
+    
+    /*======== Sección principal ========*/
+            
+    
+//    #CuadroDeRecetas
+//        flex:
+//            direction: row
+//            wrap: wrap
+//        justify-content: space-between
+//
+//        margin:
+//            bottom: 50px     
+//            
+//    .Articulo
+//        display: flex
+//        flex:
+//            direction: column
+//        align-items: center
+//
+//        margin: 20px 0
+//
+//        text-align: center
+//
+//    .TextoDeArticulo
+//        margin:
+//            top: 12px
+
+@media only screen and (min-width:500px)
+    /*======== Sección principal ========*/    
+    /*----- Recetas -----*/
+    .Recetas-Rectangulo-Principal
+        flex:
+            direction: row
+            wrap: wrap
+        justify-content: space-around
+
+        max-width: 800px
+        width: 100%
+        
+    .Recetas-Item
+        max-width: 220px
+        margin: 20px 0
+        width: 100%
+
+        text:
+            align: center
+    /*----- Recetas -----*/
+    /*======== Sección principal ========*/    
 
 
 @media only screen and (min-width:768px)
+    /*======== Sección principal ========*/
+    /*------ Recomendación ------*/
     .TituloDeSeccionPrincipal
         font:
             size: 2em
@@ -90,9 +138,24 @@
         font:
             size: 1.7em
         text-decoration: underline
-        
+    /*------ Recomendación ------*/
     
-    /*=== Articulos ===*/
+    
+    /*----- Recetas -----*/
+    .Recetas-Rectangulo-Principal
+        flex:
+            wrap: wrap
+        justify-content: space-around
+            
+    .Recetas-Item
+        transition: all 0.2s
+        &:hover
+            margin:
+                top: 0
+    /*------ Recetas ------*/
+    
+    
+    /*------ Articulos ------*/
     .Articulos-Rectangulo-Principal
         flex:
             direction: row
@@ -102,26 +165,11 @@
         &:hover
             margin:
                 top: 0
-    /*=== Articulos ===*/
+    /*------ Articulos ------*/
+    /*======== Sección principal ========*/
     
     
-    #CuadroDeArticulos
-        flex:
-            direction: row
-            wrap: wrap
-        justify-content: center
-        align-items: center
-
-        margin:
-            top: 20px
-            bottom: 50px
-
-    .ImgDeArticulo
-        opacity: 1
-
-    .TextoDeArticulo
-        width: 75%
-
+    /*======== Sección agenda consulta ========*/
     .TituloDeSeccionAgendaConsulta
         font:
             size: 3.2em
@@ -132,48 +180,22 @@
     .Boton
         font:
             size: 1.5em
-            
-            
-            
-/*======== Sección nueva ========*/
-
-//.Articulos-Rectangulo-Principal
-//    display: flex
-//    align-items: center
-//    justify-content: space-between
-//    
-//    max-width: 800px
-//    width: 90%
+    /*======== Sección agenda consulta ========*/
+    
+    
+//    #CuadroDeArticulos
+//        flex:
+//            direction: row
+//            wrap: wrap
+//        justify-content: center
+//        align-items: center
 //
-//.Articulos-Vinculo-Item
-//    color: #000000
-//    
-//.Articulos-Item
-//    display: flex
-//    flex:
-//        direction: column
-//    align-items: center
-//    
-//    max-width: 200px
-//    margin: 20px 0
-//    width: 100%
-//    
-//    text:
-//        align: center
+//        margin:
+//            top: 20px
+//            bottom: 50px
 //
-//.Articulos-Item-Img
-//    width: 200px
-//    height: 200px
-//    
-//    border-radius: 50%
-//    
-//.Articulos-Item-Txt
-//    margin:
-//        top: 14px
-//        
-//    font:
-//        size: 1.1em
-//    text:
-//        align: center
-
-/*======== Sección nueva ========*/
+//    .ImgDeArticulo
+//        opacity: 1
+//
+//    .TextoDeArticulo
+//        width: 75%
