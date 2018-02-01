@@ -1,4 +1,5 @@
 /*======== Sección principal ========*/
+/*------ Recomendación ------*/
 
 #SeccionPrincipal
     display: flex
@@ -54,64 +55,60 @@
     margin-bottom: 10px
     color: orangered
 
-#TituloDeArticulos
-    margin-top: 10px
+/*------ Recomendación ------*/
 
-#CuadroDeArticulos
-    max-width: 980px
+    
+/*----- Sección nueva - Recetas -----*/
+
+.Recetas-Rectangulo-Principal
     display: flex
-    flex-direction: column
-    justify-content: center
+    flex:
+        direction: column
     align-items: center
+    justify-content: space-between
     
-    margin-bottom: 40px
-
-#CuadroDeRecetas
-    max-width: 750px
-    display: flex
-    flex-direction: column
-    justify-content: center
-    align-items: center
+    margin:
+        top: 10px
+        bottom: 40px
     
-    margin-bottom: 40px
-
-.VinculoDelArticulo
-    color: #000
-
-.Articulo
-    display: flex
-    flex-direction: column
-    align-items: center
-    
-    margin: 20px 0
-    
-    text-align: center
-
-.ImgDeArticulo
-    width: 200px
-    height: 200px
-    
-    background:
-        image: url(../Img/Fondo.jpg)
-        repeat: no-repeat
-        size: cover
-        position: center center
-    border-radius: 50%
-        
-    cursor: pointer
-
-.TextoDeArticulo
+    max-width: 800px
     width: 100%
-    margin-top: 14px
+
+.Recetas-Vinculo-Item
+    color: #000000
+
+.Recetas-Item
+    display: flex
+    flex:
+        direction: column
+    align-items: center
     
-    font-size: 1.1em
-    text-align: center
+    max-width: 250px
+    margin: 20px 0
+    width: 100%
+    
+    text:
+        align: center
 
-/*======== Sección principal ========*/
+.Recetas-Item-Img
+    width: 90%
+    height: 100%
+    
+    border-radius: 25px
+
+.Recetas-Item-Txt
+    margin:
+        top: 14px
+        
+    font:
+        size: 1.1em
+    text:
+        align: center
+
+/*----- Sección nueva - Recetas -----*/
 
 
-
-/*======== Sección nueva ========*/
+/*----- Sección nueva - Artículos -----*/
 
 .Articulos-Rectangulo-Principal
     display: flex
@@ -146,6 +143,8 @@
 .Articulos-Item-Img
     width: 90%
     height: 100%
+    
+    border-radius: 25px
 
 .Articulos-Item-Txt
     margin:
@@ -156,7 +155,69 @@
     text:
         align: center
 
-/*======== Sección nueva ========*/
+/*----- Sección nueva - Artículos -----*/
+/*======== Sección principal ========*/
+
+
+
+
+
+
+/*----- Recetas -----*/
+//#TituloDeArticulos
+//    margin-top: 10px
+//
+//#CuadroDeArticulos
+//    max-width: 980px
+//    display: flex
+//    flex-direction: column
+//    justify-content: center
+//    align-items: center
+//    
+//    margin-bottom: 40px
+//
+//#CuadroDeRecetas
+//    max-width: 750px
+//    display: flex
+//    flex-direction: column
+//    justify-content: center
+//    align-items: center
+//    
+//    margin-bottom: 40px
+//
+//.VinculoDelArticulo
+//    color: #000
+//
+//.Articulo
+//    display: flex
+//    flex-direction: column
+//    align-items: center
+//    
+//    margin: 20px 0
+//    
+//    text-align: center
+//
+//.ImgDeArticulo
+//    width: 200px
+//    height: 200px
+//    
+//    background:
+//        image: url(../Img/Fondo.jpg)
+//        repeat: no-repeat
+//        size: cover
+//        position: center center
+//    border-radius: 50%
+//        
+//    cursor: pointer
+//
+//.TextoDeArticulo
+//    width: 100%
+//    margin-top: 14px
+//    
+//    font-size: 1.1em
+//    text-align: center
+/*----- Recetas -----*/
+
 
 /*======== Sección nueva ========*/
 
