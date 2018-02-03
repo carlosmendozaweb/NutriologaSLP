@@ -1,0 +1,72 @@
+.Menu
+    display: flex
+    justify-content: center
+    align-items: center
+    position: fixed
+    bottom: 50px
+    right: 20px
+    
+    height: 60px
+    width: 60px
+    
+    background:
+        color: green
+    border:
+        radius: 50%
+    z-index: 1
+
+.Menu-List
+    display: flex
+    flex:
+        direction: column
+    justify-content: center
+    position: fixed
+    bottom: 110px
+    right: -250px
+    
+    height: auto
+    max:
+        width: 250px
+    width: 200px
+    padding: 10px 0
+    
+    color: #ffffff
+    text-align: center
+    
+    background:
+        color: green
+    border-radius: 14px 14px 0 14px
+    list:
+        style: none
+    transition: all 0.5s
+
+.Menu-Item
+    padding: 10px 0
+    &:hover
+        background-color: rgba(255,255,255,0.2)
+
+.Menu-bar
+    width: 30px
+
+.Uno, .Dos, .Tres
+    height: 3px
+    width: 100%
+    
+    background:
+        color: #ffffff
+    transition: all 0.5s
+
+.Dos
+    margin: 5px 0
+    
+.Mostrar .Uno
+    transform: rotate(45deg) translate(5px, 5px)
+    
+.Mostrar .Dos
+    opacity: 0
+    
+.Mostrar .Tres
+    transform: rotate(-45deg) translate(6px, -6px)
+
+.Mostrar .Menu-List
+    right: 30px
