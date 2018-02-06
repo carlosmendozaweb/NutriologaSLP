@@ -72,6 +72,25 @@
             align: center
     /*----- Recetas -----*/
     
+    /*----- Casos de éxito -----*/
+    .Exito-Rectangulo-Principal
+        flex:
+            direction: row
+            wrap: wrap
+        justify-content: space-around
+
+        max-width: 800px
+        width: 100%
+        
+    .Exito-Item
+        max-width: 220px
+        margin: 20px 0
+        width: 100%
+
+        text:
+            align: center
+    /*----- Casos de éxito -----*/
+    
     /*----- Artículos -----*/
     .Articulos-Rectangulo-Principal
         flex:
@@ -90,7 +109,28 @@
         text:
             align: center
     /*----- Artículos -----*/
-    /*======== Sección principal ========*/    
+    /*======== Sección principal ========*/
+    
+    /*======== Página Desayuno ========*/ 
+    /*----- Favoritos -----*/
+    .Favoritos-Rectangulo-Principal
+        flex:
+            direction: row
+            wrap: wrap
+        justify-content: space-around
+
+        max-width: 800px
+        width: 100%
+        
+    .Favoritos-Item
+        max-width: 220px
+        margin: 20px 0
+        width: 100%
+
+        text:
+            align: center
+    /*----- Favoritos -----*/
+    /*======== Página Desayuno ========*/ 
 
 
 @media only screen and (min-width:768px)
@@ -164,6 +204,17 @@
                 top: 0
     /*------ Recetas ------*/
     
+    /*------ Exito ------*/
+    .Exito-Rectangulo-Principal
+        flex:
+            direction: row
+            
+    .Exito-Item
+        transition: all 0.2s
+        &:hover
+            margin:
+                top: 0
+    /*------ Exito ------*/
     
     /*------ Articulos ------*/
     .Articulos-Rectangulo-Principal
@@ -205,20 +256,16 @@
     /*======== Compartir ========*/
     
     
-    
-//    #CuadroDeArticulos
-//        flex:
-//            direction: row
-//            wrap: wrap
-//        justify-content: center
-//        align-items: center
-//
-//        margin:
-//            top: 20px
-//            bottom: 50px
-//
-//    .ImgDeArticulo
-//        opacity: 1
-//
-//    .TextoDeArticulo
-//        width: 75%
+    /*======== Página Desayuno ========*/
+    /*------ Favoritos ------*/
+    .Favoritos-Rectangulo-Principal
+        flex:
+            direction: row
+            
+    .Favoritos-Item
+        transition: all 0.2s
+        &:hover
+            margin:
+                top: 0
+    /*------ Favoritos ------*/
+    /*======== Página Desayuno ========*/
