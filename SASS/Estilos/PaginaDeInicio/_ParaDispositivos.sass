@@ -94,6 +94,41 @@
 
 
 @media only screen and (min-width:768px)
+    /*===== Botón ir arriba =====*/
+    .ir-arriba
+        display: none
+        visibility: visible
+        position: fixed
+        bottom: 20px
+        right: 20px
+        z-index: 100
+
+        background:
+            color: springgreen
+        border:
+            radius: 12px
+            -webkit-border-radius: 12px
+            -moz-border-radius: 12px
+            -ms-border-radius: 12px
+            -o-border-radius: 12px
+        padding: 10px
+
+        cursor: pointer
+
+    #triangulobotonarriba
+        display: block
+        visibility: visible
+        z-index: 101
+
+        border-bottom: 30px solid #FFFFFF
+        border-left: 20px solid transparent
+        border-right: 20px solid transparent
+        height: 0
+        width: 0
+
+        transition: all .5s linear
+    /*===== Botón ir arriba =====*/
+    
     /*======== Sección principal ========*/
     /*------ Recomendación ------*/
     .TituloDeSeccionPrincipal
@@ -156,6 +191,19 @@
         font:
             size: 1.5em
     /*======== Sección agenda consulta ========*/
+    
+    /*======== Btn Menú ========*/
+    .Menu
+        display: none
+        visibility: hidden
+    /*======== Btn Menú ========*/
+    
+    /*======== Compartir ========*/
+    .Compartir
+        display: none
+        visibility: hidden
+    /*======== Compartir ========*/
+    
     
     
 //    #CuadroDeArticulos

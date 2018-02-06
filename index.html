@@ -20,20 +20,13 @@
         <meta property="og:image:width" content="1200" />
         <meta property="og:image:height" content="650" />
         <meta property="og:image:alt" content="Nutrióloga en San Luis Potosí" />
-
-        <!--
-        <meta content='URL de la página a compartir' property='og:url' />
-        <meta content='Título' property='og:title' />
-        <meta content='Texto que llevará' property='og:description' />
-        <meta content='Imagen que tomará al momento de compartir' property='og:image' />
-        -->
         
         <!-- Atributos para compartir en Facebook -->
         
     </head>
     <body>
         <div id="Contenido">
-        <!--<div class="ir-arriba"><p id="triangulobotonarriba"></p></div>-->
+        <div class="ir-arriba"><p id="triangulobotonarriba"></p></div>
             <header id="Encabezado">
                 <div class="CuadroDeEncabezado">
                     <a href="#" class="Link" alt="Página de inicio de Nutrióloga en SLP" title="Ir al inicio">
@@ -117,6 +110,32 @@
                 <!-- Mis recetas -->
                 
                 
+                <!-- Que se vayan agregando los últimos 3 casos de éxito -->
+                <!-- Casos de éxito -->
+                <a Name="CasosDeExito"></a>
+                <h2 class="TituloDeSeccionPrincipal AnchoDeCuadro" id="TituloDeArticulos">Casos de éxito</h2>
+                <div class="Exito-Rectangulo-Principal">
+                    <a href="#" class="Exito-Vinculo-Item">
+                        <div class="Exito-Item">
+                            <img src="Img/Fondo.jpg" alt="" class="Exito-Item-Img">
+                            <p class="Exito-Item-Txt">Hermana Claudia</p>
+                        </div>
+                    </a>
+                    <a href="#" class="Exito-Vinculo-Item">
+                        <div class="Exito-Item">
+                            <img src="Img/Fondo.jpg" alt="" class="Exito-Item-Img">
+                            <p class="Exito-Item-Txt">Viridiana</p>
+                        </div>
+                    </a>
+                    <a href="#" class="Exito-Vinculo-Item">
+                       <div class="Exito-Item">
+                            <img src="Img/Fondo.jpg" alt="" class="Exito-Item-Img">
+                            <p class="Exito-Item-Txt">Adelina</p>
+                        </div>
+                    </a>
+                </div>
+                <!-- Casos de éxito -->
+                
                 
                 <!-- Que se vayan agregando los últimos 3 artículos -->
                 <!-- Artículos -->
@@ -160,12 +179,14 @@
                 </div>
                 <!-- Agenda consulta -->
                 
+                
                 <!-- Btn Menú -->
                 <div class="Menu">
                     <nav id="Menu-circle">
                         <ul id="Menu--List" class="Menu-List">
                             <a href="#Recomendacion"><li class="Menu-Item">Recomendación del día</li></a>
                             <a href="#Recetas"><li class="Menu-Item">Mis recetas</li></a>
+                            <a href="#CasosDeExito"><li class="Menu-Item">Casos de éxito</li></a>
                             <a href="#Articulos"><li class="Menu-Item">Artículos</li></a>
                             <a href="#AgendarConsulta"><li class="Menu-Item">Agendar consulta</li></a>
                         </ul>
@@ -181,9 +202,9 @@
                 <!-- Compartir -->
                 <div class="Compartir">
                     <ul class="Compartir-List">
-                        <li class="Compartir-Item" id="Facebook"><img src="Img/Logo%20Facebook.png" alt="" class="Compartir-Img"></li>
-                        <li class="Compartir-Item" id="Twitter"><img src="Img/Logo%20Twitter.png" alt="" class="Compartir-Img"></li>
-                        <li class="Compartir-Item" id="WhatsApp"><img src="Img/Logo%20WhatsApp.png" alt="WhatsApp" class="Compartir-Img"></li>
+                        <a name="fb_share" type="button_count" href="javascript: void(0);" onclick="window.open('http://www.facebook.com/sharer.php?u=http://nutriologaensanluispotosi.com/index.html','ventanacompartir', 'toolbar=0, status=0, width=650, height=450');" class="Compartir-Vinculo"><li class="Compartir-Item" id="Facebook"><img src="Img/Logo%20Facebook.png" alt="" class="Compartir-Img"></li></a>
+                        <a href="javascript: void(0);" onclick="window.open ('http://www.twitter.com/share?url=http://bit.ly/NutriologaEnSLP&text=Recibe tips, recetas y recomendaciones ricas y saludables aquí =>&hashtags=NutriologaJeny', 'Twitter', 'toolbar=0, status=0, width=550, height=350');" class="Compartir-Vinculo"><li class="Compartir-Item" id="Twitter"><img src="Img/Logo%20Twitter.png" alt="" class="Compartir-Img"></li></a>
+                        <a href="whatsapp://send?text=http://nutriologaensanluispotosi.com/index.html" data-action="share/whatsapp/share" data-text="Pagina oficial de la Nutrióloga Jeny Martínez" class="Compartir-Vinculo"><li class="Compartir-Item" id="WhatsApp"><img src="Img/Logo%20WhatsApp.png" alt="WhatsApp" class="Compartir-Img"></li></a>
                     </ul>
                 </div>
                 <!-- Compartir -->
@@ -203,5 +224,6 @@
         <script src="JS/instafeed.js" type="text/javascript"></script>
         <script src="JS/custom.js" type="text/javascript"></script>
         <script src="JS/Comunes/BtnMenu.js" type="text/javascript"></script>
+        <script src="JS/arriba.js" type="text/javascript"></script>
     </body>
 </html>
