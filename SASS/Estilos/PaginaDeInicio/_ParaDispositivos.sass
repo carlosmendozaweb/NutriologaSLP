@@ -16,9 +16,10 @@
     #SubtituloDePagina
         font:
             size: 1em
-
     /*======== Encabezado ========*/
-
+    
+    /*======== Sección principal ========*/
+    /*------ Recomendación ------*/
     .TituloDeSeccionPrincipal
         font:
             size: 1.6em
@@ -41,38 +42,135 @@
         font:
             size: 1.14em
 
-    #CuadroDeRecetas
-        flex:
-            direction: row
-            wrap: wrap
-        justify-content: space-between
-
-        margin:
-            bottom: 50px
-
-    .Articulo
-        display: flex
-        flex:
-            direction: column
-        align-items: center
-
-        margin: 20px 0
-
-        text-align: center
-
-    .TextoDeArticulo
-        margin:
-            top: 12px
-
     .Boton
         padding: 16px 0
 
         font:
             size: 1.3em
+    /*------ Recomendación ------*/
+    /*======== Sección principal ========*/
+    
 
+@media only screen and (min-width:500px)
+    /*======== Sección principal ========*/    
+    /*----- Recetas -----*/
+    .Recetas-Rectangulo-Principal
+        flex:
+            direction: row
+            wrap: wrap
+        justify-content: space-around
+
+        max-width: 800px
+        width: 100%
+        
+    .Recetas-Item
+        max-width: 220px
+        margin: 20px 0
+        width: 100%
+
+        text:
+            align: center
+    /*----- Recetas -----*/
+    
+    /*----- Casos de éxito -----*/
+    .Exito-Rectangulo-Principal
+        flex:
+            direction: row
+            wrap: wrap
+        justify-content: space-around
+
+        max-width: 800px
+        width: 100%
+        
+    .Exito-Item
+        max-width: 220px
+        margin: 20px 0
+        width: 100%
+
+        text:
+            align: center
+    /*----- Casos de éxito -----*/
+    
+    /*----- Artículos -----*/
+    .Articulos-Rectangulo-Principal
+        flex:
+            direction: row
+            wrap: wrap
+        justify-content: space-around
+
+        max-width: 800px
+        width: 100%
+        
+    .Articulos-Item
+        max-width: 220px
+        margin: 20px 0
+        width: 100%
+
+        text:
+            align: center
+    /*----- Artículos -----*/
+    /*======== Sección principal ========*/
+    
+    /*======== Página Desayuno ========*/ 
+    /*----- Favoritos -----*/
+    .Favoritos-Rectangulo-Principal
+        flex:
+            direction: row
+            wrap: wrap
+        justify-content: space-around
+
+        max-width: 800px
+        width: 100%
+        
+    .Favoritos-Item
+        max-width: 220px
+        margin: 20px 0
+        width: 100%
+
+        text:
+            align: center
+    /*----- Favoritos -----*/
+    /*======== Página Desayuno ========*/ 
 
 
 @media only screen and (min-width:768px)
+    /*===== Botón ir arriba =====*/
+    .ir-arriba
+        display: none
+        visibility: visible
+        position: fixed
+        bottom: 20px
+        right: 20px
+        z-index: 100
+
+        background:
+            color: springgreen
+        border:
+            radius: 12px
+            -webkit-border-radius: 12px
+            -moz-border-radius: 12px
+            -ms-border-radius: 12px
+            -o-border-radius: 12px
+        padding: 10px
+
+        cursor: pointer
+
+    #triangulobotonarriba
+        display: block
+        visibility: visible
+        z-index: 101
+
+        border-bottom: 30px solid #FFFFFF
+        border-left: 20px solid transparent
+        border-right: 20px solid transparent
+        height: 0
+        width: 0
+
+        transition: all .5s linear
+    /*===== Botón ir arriba =====*/
+    
+    /*======== Sección principal ========*/
+    /*------ Recomendación ------*/
     .TituloDeSeccionPrincipal
         font:
             size: 2em
@@ -90,24 +188,49 @@
         font:
             size: 1.7em
         text-decoration: underline
-
-    #CuadroDeArticulos
+    /*------ Recomendación ------*/
+    
+    
+    /*----- Recetas -----*/
+    .Recetas-Rectangulo-Principal
+        flex:
+            wrap: wrap
+        justify-content: space-around
+            
+    .Recetas-Item
+        transition: all 0.2s
+        &:hover
+            margin:
+                top: 0
+    /*------ Recetas ------*/
+    
+    /*------ Exito ------*/
+    .Exito-Rectangulo-Principal
         flex:
             direction: row
-            wrap: wrap
-        justify-content: center
-        align-items: center
-
-        margin:
-            top: 20px
-            bottom: 50px
-
-    .ImgDeArticulo
-        opacity: 1
-
-    .TextoDeArticulo
-        width: 75%
-
+            
+    .Exito-Item
+        transition: all 0.2s
+        &:hover
+            margin:
+                top: 0
+    /*------ Exito ------*/
+    
+    /*------ Articulos ------*/
+    .Articulos-Rectangulo-Principal
+        flex:
+            direction: row
+            
+    .Articulos-Item
+        transition: all 0.2s
+        &:hover
+            margin:
+                top: 0
+    /*------ Articulos ------*/
+    /*======== Sección principal ========*/
+    
+    
+    /*======== Sección agenda consulta ========*/
     .TituloDeSeccionAgendaConsulta
         font:
             size: 3.2em
@@ -118,3 +241,31 @@
     .Boton
         font:
             size: 1.5em
+    /*======== Sección agenda consulta ========*/
+    
+    /*======== Btn Menú ========*/
+    .Menu
+        display: none
+        visibility: hidden
+    /*======== Btn Menú ========*/
+    
+    /*======== Compartir ========*/
+    .Compartir
+        display: none
+        visibility: hidden
+    /*======== Compartir ========*/
+    
+    
+    /*======== Página Desayuno ========*/
+    /*------ Favoritos ------*/
+    .Favoritos-Rectangulo-Principal
+        flex:
+            direction: row
+            
+    .Favoritos-Item
+        transition: all 0.2s
+        &:hover
+            margin:
+                top: 0
+    /*------ Favoritos ------*/
+    /*======== Página Desayuno ========*/
